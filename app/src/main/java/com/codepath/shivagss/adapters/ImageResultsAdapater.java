@@ -6,11 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.codepath.shivagss.imagesearch.ImageResult;
 import com.codepath.shivagss.imagesearch.R;
+import com.etsy.android.grid.util.DynamicHeightImageView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -26,20 +26,27 @@ public class ImageResultsAdapater extends ArrayAdapter<ImageResult> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if(position >= getCount()) return convertView;
+        if (position >= getCount()) return convertView;
         ImageResult result = getItem(position);
 
-        if(convertView == null){
-           convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_result,parent,false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_result, parent, false);
         }
-        ImageView imageView = (ImageView) convertView.findViewById(R.id.ivThumbnail);
+        DynamicHeightImageView imageView = (DynamicHeightImageView) convertView.findViewById(R.id.ivThumbnail);
         TextView textView = (TextView) convertView.findViewById(R.id.tvTitle);
 
+        double positionHeight = getPositionRatio(position);
+        imageView.setHeightRatio(positionHeight);
         imageView.setImageResource(0);
         Picasso.with(getContext()).load(result.thumbURL).placeholder(R.drawable.ic_launcher).into(imageView);
         textView.setText(Html.fromHtml(result.title)
         );
 
         return convertView;
+    }
+
+    private double getPositionRatio(final int position) {
+        ImageResult result = getItem(position);
+        return (Double.parseDouble(result.height) / Double.parseDouble(result.width));
     }
 }

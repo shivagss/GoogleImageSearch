@@ -15,6 +15,10 @@
     <string name="pref_image_type">Image Type</string>
     <string name="pref_site_filter">Site Filter</string>
     <string name="title_activity_settings">Advanced Search Options</string>
+    <string name="empty_list_label">Search for your favorite images</string>
+    <string name="offline_label">No internet connection</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="action_share">share</string>
 
     <string-array name="arrSize">
         <item>none</item>
