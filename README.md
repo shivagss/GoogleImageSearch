@@ -3,7 +3,7 @@ GoogleImageSearch
 
 An image searching application powered by the Google Image Search API
 
-####Total time spent: 5 Hours
+####Total time spent: 8 Hours
 
 ####User Stories:
   * [x] User can enter a search query that will display a grid of image results from the Google Image API.
@@ -22,7 +22,7 @@ An image searching application powered by the Google Image Search API
   * [x] Replace Filter Settings Activity with a lightweight modal overlay
   * [x] Use the StaggeredGridView to display improve the grid of image results
   
-Libraries used: android-async-http-1.4.5, picasso-2.3.4 and android-support-v4.
+Libraries used: android-async-http-1.4.5, picasso-2.3.4, com.etsy.android.grid:library:1.0.5 and android-support-v4.
 
 ####Demo:
 ![Video Walkthrough](demo.gif)
