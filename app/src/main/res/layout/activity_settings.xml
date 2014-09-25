@@ -6,10 +6,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.codepath.shivagss.imagesearch.SettingsDialogFragment">
+    tools:context="com.codepath.shivagss.fragment.SettingsDialogFragment">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:id="@+id/tvSize"
         android:text="@string/pref_image_size"
@@ -25,7 +25,7 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:id="@+id/tvColor"
         android:layout_below="@id/tvSize"
@@ -42,7 +42,7 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:id="@+id/tvType"
         android:layout_below="@id/tvColor"
@@ -59,7 +59,7 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:id="@+id/tvSite"
         android:layout_below="@id/tvType"

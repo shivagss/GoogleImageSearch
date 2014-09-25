@@ -4,8 +4,9 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_margin="5dp"
-              android:background="@android:color/transparent"
+              android:padding="5dp"
               android:gravity="center"
+              android:background="@android:color/white"
               android:orientation="vertical">
 
     <com.etsy.android.grid.util.DynamicHeightImageView

@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.codepath.shivagss.imagesearch.ImageResult;
-import com.codepath.shivagss.imagesearch.R;
+import com.codepath.shivagss.model.ImageResult;
+import com.codepath.shivagss.helpers.R;
 import com.etsy.android.grid.util.DynamicHeightImageView;
 import com.squareup.picasso.Picasso;
 

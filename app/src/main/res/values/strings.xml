@@ -19,9 +19,10 @@
     <string name="offline_label">No internet connection</string>
     <string name="no_internet">No internet connection</string>
     <string name="action_share">share</string>
+    <string name="no_results">No results found</string>
 
     <string-array name="arrSize">
-        <item>none</item>
+        <item>any</item>
         <item>small</item>
         <item>medium</item>
         <item>large</item>
@@ -29,7 +30,7 @@
     </string-array>
 
     <string-array name="arrType">
-        <item>none</item>
+        <item>any</item>
         <item>face</item>
         <item>photo</item>
         <item>clipart</item>
@@ -37,7 +38,7 @@
     </string-array>
 
     <string-array name="arrColor">
-        <item>none</item>
+        <item>any</item>
         <item>black</item>
         <item>blue</item>
         <item>pink</item>

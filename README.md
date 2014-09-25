@@ -21,8 +21,9 @@ An image searching application powered by the Google Image Search API
   * [x] User can share an image to their friends or email it to themselves
   * [x] Replace Filter Settings Activity with a lightweight modal overlay
   * [x] Use the StaggeredGridView to display improve the grid of image results
+  * [x] User can zoom or pan images displayed in full-screen detail view
   
-Libraries used: android-async-http-1.4.5, picasso-2.3.4, com.etsy.android.grid:library:1.0.5 and android-support-v4.
+Libraries used: android-async-http-1.4.5, picasso-2.3.4, com.etsy.android.grid:library:1.0.5, Mike Ortiz's TouchView and android-support-v4.
 
 ####Demo:
 ![Video Walkthrough](demo.gif)
